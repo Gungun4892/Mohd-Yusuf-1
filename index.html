@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kurbaan 🎂</title>
+<style>
+:root{--green:#42ff9a;--cyan:#42eaff;--pink:#ff63cf;--bg:#03070d}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 50% 0%,#123449 0%,#07111c 40%,#020408 100%);color:#e9fff5;font-family:Consolas,Monaco,"Courier New",monospace}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.12;background:repeating-linear-gradient(0deg,transparent 0 3px,#42ff9a 4px,transparent 5px 8px)}
+#stars{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;background:#b7ffe0;border-radius:50%;animation:twinkle 2s infinite alternate}
+.wrap{position:relative;z-index:2;width:min(920px,92%);margin:24px auto}
+.terminal{border:1px solid #247c58;border-radius:18px;overflow:hidden;background:rgba(3,12,19,.91);box-shadow:0 0 55px #12ff7920,0 0 110px #42eaff0b}
+.bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#0c1b26;border-bottom:1px solid #174a38}
+.dot{width:10px;height:10px;border-radius:50%;background:#ff605c}.dot:nth-child(2){background:#ffbd44}.dot:nth-child(3){background:#00ca68}
+.bar span{margin-left:auto;color:#83b7a0;font-size:12px}
+.content{padding:clamp(20px,5vw,48px);text-align:center}
+.prompt{text-align:left;color:#92b9a7;font-size:clamp(11px,2.5vw,14px);line-height:1.9}
+.green{color:var(--green)}.cyan{color:var(--cyan)}.pink{color:var(--pink)}
+h1{font-size:clamp(30px,7vw,65px);line-height:1.12;margin:27px 0 10px;color:var(--green);text-shadow:0 0 8px #42ff9a,0 0 30px #42ff9a66;animation:flicker 3s infinite}
+.subtitle{font-size:clamp(14px,3vw,19px);color:#a7f6d2}
+.cake-scene{position:relative;width:220px;height:200px;margin:12px auto 4px;display:grid;place-items:center}
+.cake{font-size:108px;filter:drop-shadow(0 0 18px #ff63cf66);animation:cakeFloat 2.2s ease-in-out infinite;position:relative;z-index:1}
+.orbit{position:absolute;width:190px;height:100px;border:1px solid #42eaff70;border-radius:50%;transform:rotate(-20deg);animation:orbit 5s linear infinite}
+.orbit.two{width:210px;height:125px;transform:rotate(35deg);border-color:#42ff9a55;animation-direction:reverse}
+.glow{position:absolute;width:115px;height:25px;bottom:24px;border-radius:50%;background:#42ff9a35;filter:blur(14px)}
+.message{margin:20px auto;max-width:690px;padding:20px;border:1px dashed #248b5d;background:linear-gradient(135deg,#071610,#07131d);border-radius:14px;font-family:Arial,sans-serif;font-size:clamp(15px,3vw,19px);line-height:1.8;box-shadow:inset 0 0 25px #42ff9a08}
+.message strong{color:#5dff9d}.message .blue{color:var(--cyan)}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:11px;margin:22px 0 8px}
+button{cursor:pointer;border:1px solid var(--green);color:var(--green);background:#06140e;border-radius:9px;padding:12px 16px;font:bold 14px Consolas,monospace;transition:.2s}
+button:hover{background:#103c27;box-shadow:0 0 20px #39ff8844;transform:translateY(-2px)}
+button.voice{border-color:var(--cyan);color:var(--cyan)}button.stop{border-color:var(--pink);color:var(--pink)}
+.status{min-height:30px;color:var(--cyan);margin-top:14px;font-size:13px;line-height:1.6}
+.progress{height:4px;background:#153126;border-radius:5px;overflow:hidden;margin:14px auto 0;max-width:420px}
+.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--cyan),var(--pink));transition:width .3s}
+.footer{color:#6d9d88;font-size:12px;margin-top:24px}
+.balloon{position:fixed;z-index:0;bottom:-110px;font-size:32px;animation:floatUp linear infinite;pointer-events:none;filter:drop-shadow(0 0 8px #42eaff33)}
+.confetti{position:fixed;top:-25px;z-index:5;pointer-events:none;animation:fall linear forwards}
+.ring{position:fixed;left:50%;top:50%;width:20px;height:20px;border:2px solid var(--cyan);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:4;animation:ring 1.1s ease-out forwards}
+.cursor{display:inline-block;width:8px;height:1em;vertical-align:middle;background:var(--green);animation:blink .7s steps(2) infinite}
+@keyframes floatUp{to{transform:translateY(-125vh) rotate(25deg)}}
+@keyframes fall{to{transform:translateY(115vh) rotate(720deg);opacity:.15}}
+@keyframes cakeFloat{0%,100%{transform:translateY(0) rotate(-2deg) scale(1)}50%{transform:translateY(-11px) rotate(2deg) scale(1.04)}}
+@keyframes orbit{to{transform:rotate(340deg)}}
+@keyframes twinkle{to{opacity:.15;transform:scale(.5)}}
+@keyframes flicker{0%,95%,100%{opacity:1}96%{opacity:.7}97%{opacity:1}}
+@keyframes blink{50%{opacity:0}}
+@keyframes ring{to{width:250px;height:250px;opacity:0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+<div class="wrap">
+<main class="terminal">
+<div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>birthday.exe — neon terminal</span></div>
+<div class="content">
+<div class="prompt">
+<div><span class="green">kurbaan@birthday</span>:~$ initialize birthday_surprise.exe</div>
+<div>Loading happiness modules... <span class="green">[OK]</span></div>
+<div>Compiling love, laughter &amp; memories... <span class="green">[OK]</span></div>
+<div>Scanning calendar... <span class="cyan">BIRTHDAY DETECTED!</span></div>
+<div><span class="green">root@celebration</span>:~$ <span class="pink">launch --maximum-happiness</span><span class="cursor"></span></div>
+</div>
+<h1>HAPPY BIRTHDAY<br><span class="cyan">KURBAAN!</span> 🎉</h1>
+<div class="subtitle">&gt;&gt; A special day for a truly special brother. &lt;&lt;</div>
+<div class="cake-scene"><div class="orbit"></div><div class="orbit two"></div><div class="glow"></div><div class="cake">🎂</div></div>
+<section class="message">
+<strong>Dear Kurbaan ❤️</strong><br>
+Janamdin mubarak ho, mere pyare bhai! 🥳<br>
+May your life be full of khushiyan, success, good health aur endless smiles.<br>
+Tere saare dreams poore hon, har naya din ek nayi achievement laaye,<br>
+aur teri life hamesha pyaar, sukoon aur blessings se bhari rahe. 💚<br>
+<strong>Hamesha khush reh, bhai — keep shining!</strong><br>
+<span class="blue">With lots of love, today and always 💙</span>
+</section>
+<div class="buttons">
+<button class="voice" onclick="playVoice()">▶ Play Birthday Voice 🎙️</button>
+<button onclick="launchConfetti()">sudo celebrate 🎊</button>
+<button onclick="surprise()">./open_surprise 🎁</button>
+<button class="stop" onclick="stopVoice()">■ Stop Voice</button>
+<button onclick="copyWish()">copy birthday wish</button>
+</div>
+<div class="status" id="status" aria-live="polite">System status: Birthday mode activated ✓</div>
+<div class="progress"><span id="progress"></span></div>
+<div class="footer">/* Made with code, love &amp; lots of good vibes */</div>
+</div>
+</main>
+</div>
+<script>
+const statusBox=document.getElementById("status");
+const floaties=["🎈","💚","✨","🎈","💙","⭐","🎊"];
+for(let i=0;i<22;i++){const e=document.createElement("div");e.className="balloon";e.textContent=floaties[i%floaties.length];e.style.left=Math.random()*100+"vw";e.style.animationDuration=(8+Math.random()*10)+"s";e.style.animationDelay=(Math.random()*10)+"s";document.body.appendChild(e)}
+for(let i=0;i<85;i++){const s=document.createElement("i");s.className="star";s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";s.style.animationDelay=Math.random()*3+"s";document.getElementById("stars").appendChild(s)}
+let voiceParts=[],partIndex=0,voiceTimer=null;
+function makeRing(){const r=document.createElement("div");r.className="ring";document.body.appendChild(r);r.addEventListener("animationend",()=>r.remove())}
+function launchConfetti(){const pieces=["🎉","✨","💚","🎊","⭐","💙","🎂","🥳"];for(let i=0;i<65;i++){const e=document.createElement("div");e.className="confetti";e.textContent=pieces[Math.floor(Math.random()*pieces.length)];e.style.left=Math.random()*100+"vw";e.style.animationDuration=(2.5+Math.random()*3.5)+"s";e.style.fontSize=(14+Math.random()*22)+"px";document.body.appendChild(e);e.addEventListener("animationend",()=>e.remove())}makeRing();statusBox.textContent="Celebration protocol running... 🎉🎂"}
+function surprise(){statusBox.textContent="🎁 Surprise unlocked! Kurbaan, tu sabse best bhai hai. Hamesha khush reh! 💚";launchConfetti();if("vibrate"in navigator)navigator.vibrate([100,50,100])}
+function stopVoice(){if("speechSynthesis"in window)window.speechSynthesis.cancel();if(voiceTimer)clearInterval(voiceTimer);voiceTimer=null;document.getElementById("progress").style.width="0%";statusBox.textContent="Voice stopped. Press Play Birthday Voice to listen again."}
+function playVoice(){
+ if(!("speechSynthesis"in window)){statusBox.textContent="Is browser mein voice-over supported nahi hai. Chrome mein open karke try karein.";return}
+ window.speechSynthesis.cancel();if(voiceTimer)clearInterval(voiceTimer);
+ const lines=[
+  "Hello Kurbaan!",
+  "Happy Birthday to you!",
+  "Janamdin mubarak ho, mere pyare bhai!",
+  "Dua hai tumhari zindagi khushiyon, kamyabi, achchi sehat aur pyaar se bhari rahe.",
+  "Tumhare saare sapne poore hon, aur tum hamesha haste muskurate raho.",
+  "Keep shining, keep smiling, and keep being amazing!",
+  "Happy Birthday, Kurbaan! Lots of love!"
+ ];
+ voiceParts=lines;partIndex=0;launchConfetti();
+ const speakNext=()=>{
+  if(partIndex>=voiceParts.length){voiceTimer=null;document.getElementById("progress").style.width="100%";statusBox.textContent="Voice-over complete: Happy Birthday, Kurbaan! 🎂";return}
+  const line=voiceParts[partIndex];statusBox.textContent="🎙️ Voice-over: "+line;
+  document.getElementById("progress").style.width=((partIndex+1)/voiceParts.length*100)+"%";
+  const utter=new SpeechSynthesisUtterance(line);utter.rate=.88;utter.pitch=1.12;utter.volume=1;
+  const voices=window.speechSynthesis.getVoices();
+  const chosen=voices.find(v=>/hi-IN/i.test(v.lang))||voices.find(v=>/en-IN/i.test(v.lang))||voices.find(v=>/^en/i.test(v.lang));
+  if(chosen)utter.voice=chosen;
+  utter.onend=()=>{partIndex++;setTimeout(speakNext,250)};
+  utter.onerror=()=>{partIndex++;setTimeout(speakNext,250)};
+  window.speechSynthesis.speak(utter);
+ };
+ speakNext();
+}
+async function copyWish(){const wish="Happy Birthday Kurbaan! 🎂 Janamdin mubarak ho, mere pyare bhai! Dua hai tumhari zindagi khushiyon, kamyabi, achchi sehat aur pyaar se bhari rahe. Tumhare saare sapne poore hon. Keep shining, keep smiling! ❤️";try{await navigator.clipboard.writeText(wish);statusBox.textContent="Birthday wish copied! Ab WhatsApp par send kar do 💚"}catch{statusBox.textContent=wish}}
+</script>
+</body>
+</html>
